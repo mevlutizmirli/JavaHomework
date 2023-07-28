@@ -32,7 +32,7 @@ public enum Grade {
     @Override
     public String toString() {
         return "Grade " + this.stringValue
-                + " corresponds to numeric grade "
+                + " corresponds to numeric grade  "
                 + this.numericValue;
     }
 }

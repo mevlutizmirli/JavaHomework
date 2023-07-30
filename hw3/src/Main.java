@@ -1,9 +1,12 @@
 import main.CourseGrade;
+import main.GenerateTranscript;
 import main.Transcript;
 import util.Grade;
 
+import java.io.FileNotFoundException;
+
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
 
         CourseGrade courseGrade1 = new CourseGrade("ME", 120, 5, Grade.A);
         CourseGrade courseGrade2 = new CourseGrade("MATH", 105,5, Grade.F);
@@ -17,7 +20,13 @@ public class Main {
 
 
 
+
+
         System.out.println(transcript);
+
+        GenerateTranscript generateTranscript = new GenerateTranscript();
+        generateTranscript.takeInputFromUser();
+        generateTranscript.takeInputFromFile();
 
 
 

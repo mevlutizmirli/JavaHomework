@@ -21,11 +21,17 @@ public class CourseGrade {
         this(courseDepartment, courseCode,courseCredit, Grade.F);
     }
 
-    public CourseGrade(String courseDepartment, int courseCode, int courseCredit, Grade gradeTaken) {
+    public CourseGrade(String courseDepartment, int courseCode, int courseCredit, double gradeTaken) {
        setCourseDepartment(courseDepartment);
        setCourseCode(courseCode);
        setCourseCredit(courseCredit);
        setGradeTaken(gradeTaken);
+    }
+    public CourseGrade(String courseDepartment, int courseCode, int courseCredit, Grade gradeTaken) {
+        setCourseDepartment(courseDepartment);
+        setCourseCode(courseCode);
+        setCourseCredit(courseCredit);
+        setGradeTaken(gradeTaken);
     }
 
     //Get and Set methods are defined.
